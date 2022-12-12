@@ -97,42 +97,83 @@ textarea {
 
 
 html {
-  background-color: #f6ebf4;
+  background-color:#023b59;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  padding: 0 2em;
   font-size: 1.25em;
-  height: 100%;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
 }
 
-.wrapper {
+
+.flex-container {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 500;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-    background-color:#023b59;
-    border-top: #023b59;
-    border-bottom: #023b59;
-    
+    flex-flow: row wrap;
+    max-width: 1200px;
 }
 
-.div-1, .div-2, .div-3 {
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background: #ccc;
+    color: #222;
+    padding: .9em;
+    border: 5px solid #999;
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    border-bottom: 1px solid #999;
+    
+}
+p {
+    font-size: 1.35em;
+}
+
+span {
+    font-family: "Lora", serif;
+}
+
+.flex-items {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #482673;
-  line-height: 1.4em;
-  font-size: 1.2em;
-  background-color: #f6ebf4;
-  height: 285px;
+  line-height: 1.5em;
+  font-size: 1em;
   display: flex;
-  width: 30%;
   justify-content: center;
   align-items: center;
-  padding: .9em;
+  flex-basis: 30%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
+}
+.divider {
+    width: 2px;
+    margin: 6px 0;
+    background: #999;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%; 
+    padding: .9em;
+    border-top: 1px solid #999;
+}
+ 
+footer i {
+    padding: 30px 20px 0 0;
 }
 
 
